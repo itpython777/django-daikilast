@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta chareset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'main1.css' %}"/>  
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>30分で作るホームページ</title>
+</head>
+<body>
+	<h1>自己紹介</h1>
+	<p>【名前】　関本大貴／就活中<br>
+    【出身地】北海道岩見沢出身の33歳<br>
+    【経歴・実績】<br>
+    学生時代からゲームをすることが好きで、毎日ゲーム三昧でした。パソコンをいじるのも好きで将来はパソコン関連の仕事に携わりたいと思いました。<br>
+    　・2009年12月　株式会社アテナ入社
+    　　データ入力などの業務2年間担当。
+    　・2011年12月　派遣会社に登録。
+    　　コールセンターなど色々な職種を
+    　　転々とし方向性が定まらない日々。
+    　・2018年12月　就労支援移行所に通所
+    　　プログラムに参加したりやパソコン
+    　　部に所属し発表など行いました。<br>
+    【趣味・好きなこと】<br>
+    　・読書（ビジネス書籍など）<br>
+    　・音楽（T.M.Revolution）
+    </p>
+    <img src="{% static 'test.jpg' %}" alt="">
+    <div class="img-2"><img src="{% static 'test1.jpg' %}" alt=""></div>
+	<a href="{% url 'diary:index' %}">PRIVATE DIARY</a>
+</body>

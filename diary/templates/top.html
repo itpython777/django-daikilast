@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta chareset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'main.css' %}"/>  
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<header>
+    <h1 class="headline">
+        <a>管理者のプロフィール</a>
+</header>
+{% block content %}
+<h1>１．簡単に私の自己紹介</h1>
+<p>
+【名　前】　　：　関本大貴／就活中<br>
+
+【出　身　地】：　北海道岩見沢出身の３３歳です。<br>
+
+【経歴・実績】：　2009大原専門学校卒業後、公務員を目指したが<br>
+　　　　　　　　　2010/1月　岩見沢の株式会社アテナ入社後データ入力の仕事に２年間担当<br>
+　　　　　　　　　2012/1月　工場で経理事務などの仕事を担当<br>
+
+<p>【得意なこと】</p>
+    <ul>
+        <li>パソコン</li>
+        <li>将棋</li>
+    </ul>
+<p>【趣　味】</p>
+    <ul>
+        <li>読書</li>
+
+        <li>ゲーム</li>
+    </ul>
+</p>
+
+<h1>２．持っている資格</h1>
+    <ul>
+        <li>全経簿記２級</li>
+        <li>珠算電卓検定１級</li>
+        <li>情報処理検定２級</li>
+        <li>ワープロ検定１級</li>
+        <li>日商簿記３級</li>
+        <li>全経簿記２級</li>
+    </ul>
+
+<h1>３．実現したいこと</h1>
+    <ul>
+        <li>管理サイト（セキュリティミスなどを開発者が避けられるようにできる）</li>
+        <li>ユーザー認証（パーミッション、ユーザーセッション）</li>
+        <li>ログイン機能</li>
+        <li>マイグレーション機能</li>
+        <li>ＣＲＵＤ（追加・参照・変更・削除）</li>
+        <li>セキュリティ対策（ＣＳＲＦ,ＸＳＳ,パスワード暗号化）</li>
+    </ul>
+{% endblock %}
+<!-- footer -->
+<footer>
+    <nav>
+        <ul class="footer-menu">
+            <li><a href="{% url 'diary:index' %}">Top | </a>
+            <li>about  | 
+            <li>service  |  
+            <li>Contact Us
+        </ul>
+    </nav>
+    <p>© All rights reserved by webcampnavi.</p>
+</footer>
+</body>
+</html>
